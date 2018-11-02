@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/id-is.css">
+    <script src="http://use.fontawesome.com/926fe18a63.js">
+    </script>
+    <script>
+    $(function(){
+        $(".rel_site").on("change",function(){
+            $(".txt").text($(this).val());
+        });
+    });
+    </script>
+</head>
+<body>
+      <header>
+      <div class="firstline">
+          <a href="find_id.html" class="headA"><img id="logoimg" src="../img/logoand.png"></a>
+      </div>
+      <div class="container">
+         <div class="container-small">
+              
+              <button type="button" class="headC">
+                  <span class="fa fa-bars" title="MENU"></span>
+              </button>
+          </div>
+          <nav class="headB">
+              <ul>
+                  <li><a href="yaruna.html">스케줄</a></li>
+                  <li><a href="contents.html">지도</a></li>
+                  <li><a href="about.html">버스커 피드</a></li>
+                  <li><a href="contact.html">공연장 현황</a></li>
+                  <li><a href="contact.html">버스킹 홍보</a></li>
+              </ul>
+          </nav>
+          <nav class="headD">
+              <ul>
+                  <li><a href="yaruna.html">로그인</a></li>
+                  <li><a href="contents.html">회원가입</a></li>
+              </ul>
+          </nav>
+      </div>
+      </header>
+      <body>
+          
+          <h1 id="titlefind"><i class="fas fa-arrow-alt-circle-right"></i>아이디 찾기</h1>
+          
+          <div class="findidcontent">
+          <form action="#" method="post" class="contentdetail">
+               <p>회원님의 메일과 일치하는 아이디입니다.</p>
+               <td>
+               <div class="findpwlogin-wrap">
+                   <div class="findpwlogin">
+                       <input type="button" value="비밀번호 찾기" class="checkbutton">
+                   </div>
+                   <div class="findpwlogin">
+                       <input type="button" value="로그인 하기" class="checkbutton">
+                   </div>
+               </div>
+               </td>
+           </form>
+           </div>
+      </body>
+  <footer>
+       <div class="container">
+           <div class="footA">
+               <h2><img src="../img/logo.png" alt=""></h2>
+               <p>
+                   주소 : 비트캠프 <br>
+                   <a href="http://logger.net/">http://indiesker.com/</a>
+               </p>
+               <nav class="footD">
+                   <ul>
+                       <li><a href="https://twitter.com/"><span class="fa fa-twitter" title="Twitter" aria-hidden="true"></span><span class="sr-only"></span></a></li>
+                       <li><a href="https://www.facebook.com//"><span class="fa fa-facebook" title="Facebook" aria-hidden="true"></span><span class="sr-only"></span></a></li>
+                       <li><a href="https://plus.google.com/"><span class="fa fa-google-plus" title="Google Plus" aria-hidden="true"></span><span class="sr-only"></span></a></li>
+                       <li><a href="https://www.instagram.com/"><span class="fa fa-instagram" title="Instagram" aria-hidden="true"></span><span class="sr-only"></span></a></li>
+                       <li><a href="https://www.youtube.com/"><span class="fa fa-youtube" title="Youtube" aria-hidden="true"></span><span class="sr-only"></span></a></li>
+                       
+                   </ul>
+               </nav>
+               
+           </div>
+           
+           <nav class="footB">
+               <div>
+                   <h3>회원</h3>
+                   <ul>
+                       <li><a href="#">팔로잉</a></li>
+                       <li><a href="#">인기버스커</a></li>
+                       <li><a href="#">인기동영상</a></li>
+                   </ul>
+               </div>
+               <div>
+                   <h3>버스커</h3>
+                   <ul>
+                       <li><a href="#">핫스페이스</a></li>
+                       <li><a href="#">개인피드</a></li>
+                       <li><a href="#">버스킹일정</a></li>
+                   </ul>
+               </div>
+               <div>
+                   <h3>장소제공자</h3>
+                   <ul>
+                       <li><a href="#">공연장 스케줄</a></li>
+                       <li><a href="#">공연장 위치</a></li>
+                   </ul>
+               </div>
+           </nav>
+           <div class="footC">
+               ⓒ INDIESKER. ALL rights reserved.
+           </div>
+           
+       </div>
+   </footer> 
+</body>
+</html>

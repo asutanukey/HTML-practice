@@ -1,0 +1,325 @@
+@charset "UTF-8";
+/*기본색*/
+:root {
+    -main-color: #000000;
+    -accent-color: #BF6A7A;
+    -dark-color: #2B5566;
+    -text-bright-color:#fff;
+    -icon-color:#fff;
+    -icon-bk-color:lightslategray;
+    -gray-color:#ddd;
+    -middle-width:800px;
+}
+/* 기본 설정: 폰트 크기 */
+@media (max-width:599px)
+{
+    :root{
+        font-size: 16px;
+    }
+}
+
+@media (min-width:600) and (max-width:799px)
+{
+    :root{
+        font-size: 18px;
+    }
+}
+
+@media (min-width:800px)
+{
+    :root{
+        font-size: 20px;
+    }
+}
+
+/*기본 설정: 페이지 전체*/
+body {
+    margin: 0;
+    font-family: '맑은 고딕'
+                ,'Apple SD Gothic Neo'
+                ,sans-serif;
+    font-size: 18px;
+}
+
+/* 헤더 */
+header {
+    position:static;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#logoimg {
+    height: auto;
+}
+
+/*헤더A: 사이트 이름*/
+.headA {
+    display:inline-block;
+    line-height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #000000;
+    background-color: var(-main-color);
+}
+
+/*헤더B: 내비게이션 메뉴*/
+.headB ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: 200px;
+}
+
+.headB a {
+    display: block;
+    margin: 10px;
+    padding: 15px 50px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #000000;
+    border: 1px;
+    border-color:blanchedalmond;
+}
+
+.headB a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.headD ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: 200px;
+}
+
+.headD a {
+    display: block;
+    padding:15px 30px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #000000;
+    border: 1px;
+    border-color:blanchedalmond;
+}
+
+.headD a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 768px){
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .headB ul {
+        display: flex;
+    }
+    
+    .headD ul {
+        display: flex;
+    }
+}
+
+/*헤더C: 토글버튼*/
+@media (max-width: 767px)
+{ 
+/*  작은화면 전용 설정  */
+    header .firstline{
+        display:flex;
+    }
+    
+    header .container-small{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .headC {
+        margin-right: 10px;
+        padding: 0;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 28px;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    
+    .headC:hover {
+        opacity: 1;
+    }
+    
+    .headB{
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px)
+{
+/*  큰 화면 전용 설정  */
+    .headC {
+        display: none;
+    }
+    
+    .headB {
+        display: block !important;
+    }
+    .headD {
+        display: block !important;
+    }
+}
+
+
+
+/*푸터*/
+footer {
+    color: #fff;
+    color: var(-text-bright-color);
+    background-color: #000000;
+    background-color: var(-main-color);
+}
+
+footer .container {
+    padding: 40px 20px;
+}
+
+@media (min-width: 768px) {
+        footer .container{
+        display: flex;
+        flex-wrap: wrap;
+/*        max-width: 1000px;*/
+        max-width: var(-large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .footA {
+        flex: 0 0 40%;
+    }
+    
+    .footB {
+        flex: 0 0 60%;
+    }
+    
+    .footC {
+        flex: 0 0 100%;
+    }
+}
+
+/*푸터A: 사이트 정보*/
+.footA {
+    margin-bottom: 30px;
+}
+
+.foorA h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+
+.footA p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.footA a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*푸터B: 푸터 메뉴*/
+.footB div {
+    margin-bottom: 30px;
+}
+
+.footB h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: solid 1px currentColor;
+    font-size: 14px;
+}
+
+.footB ul {
+    margin: 0;
+    padding: 0;
+    list-style: nene;
+}
+
+.footB a {
+    display: block;
+    padding: 5px;
+    color: inherit;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footB a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 768px ){
+    .footB {
+        display: flex;
+    }    
+    
+    .footB div {
+        flex: 1;
+    }
+    
+    .footB div:not(:first-child){
+        margin-left: 40px;
+    }
+    
+}
+
+/*푸터C: 저작권*/
+.footC {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+}
+
+/*푸터D: SNS메뉴*/
+.footD {
+    margin-top: 20px;
+    background-color:black;
+}
+
+.footD ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footD a {
+    display: block;
+    margin-right: 10px;
+    padding: 0;
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    border: solid 1px currentColor;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.footD a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+

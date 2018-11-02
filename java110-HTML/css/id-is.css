@@ -1,0 +1,28 @@
+.findpwlogin {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.findpwlogin-wrap {
+    display: flex;
+}
+
+.checkbutton {
+    padding: 10px;
+    font-size: 15px;
+    border: solid 1px #58ACFA;
+    background-color: #58ACFA;
+    color: white;
+    border-radius: 10px;
+}
+
+#titlefind {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 10%;
+}
+
+.contentdetail {
+    
+}
